@@ -58,11 +58,27 @@ class Square extends React.Component {
       );
     }
   }
+
+  class KeyakiMember extends React.Component {
+    render(){
+      return (
+        <ui>
+          <li>米谷 奈々未</li>
+          <li>東村 芽依</li>
+        </ui>
+      )
+    }
+  }
   
   // ========================================
   
   ReactDOM.render(
     <Game />,
     document.getElementById('root')
+  );
+
+  ReactDOM.render(
+    <KeyakiMember />,
+    document.getElementById('list')
   );
   
